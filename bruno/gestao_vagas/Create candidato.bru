@@ -1,0 +1,21 @@
+meta {
+  name: Create candidato
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://127.0.0.1:8080/candidate/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "username": "Felipe1",
+    "name": "Felipe Barbosa",
+    "email": "dfelipebdn@gmail",
+    "password": "1234567890",
+    "description": "fasdkjlfs"
+  }
+}
