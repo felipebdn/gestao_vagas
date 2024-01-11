@@ -1,0 +1,18 @@
+meta {
+  name: Authenticate Company
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://127.0.0.1:8080/auth/company
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email":"felipelmtd@live",
+    "password":"1234567890"
+  }
+}
