@@ -20,6 +20,7 @@ public class JobController {
 
   @PostMapping("/job")
   public JobEntity create(@Valid @RequestBody JobEntity jobEntity){
+    System.out.println("teste"+jobEntity);
     return this.createJobUseCase.execute(jobEntity);
   }
 

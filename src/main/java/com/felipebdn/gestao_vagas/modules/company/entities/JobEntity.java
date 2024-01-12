@@ -35,7 +35,7 @@ public class JobEntity {
 
   @NotBlank
   @Column(name = "company_id", nullable = false)
-  private UUID companyId;
+  private UUID company_id;
 
   @CreationTimestamp
   private LocalDateTime createdAt;
